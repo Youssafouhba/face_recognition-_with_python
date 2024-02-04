@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    </head>{% load static %}
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/s.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <title>Medecin</title>
+</head>
+<body>
+
+    <nav class="navbar  ">
+        <div id="navcont">
+        
+        <a href="./deconnect" id="a" type="button" class="btn l" style="width: 200px;background-color: rgba(130, 238, 202, 0.5);"  >Deconnexion</a>
+
+        <a href="./suivant" id="a" type="button" class="btn l" style="width: 200px;background-color: rgba(130, 238, 202, 0.5);" >Suivant</a>
+       
+        <div class="container-fluid h">
+          <form class="d-flex " role="search">
+            <select class="form-select " size="3" aria-label="size 3 select example">
+                <option selected>--</option>
+                <option value="1">Consultation1</option>
+                <option value="2">Consultation2</option>
+                <option value="3">Consultation3</option>
+            </select>
+            <button type="submit"  class="btn " style="background-color: rgba(130, 238, 202, 0.5); width: 500px;">AFFICHER</button> 
+          </form>
+        
+        </div>
+    </div>
+      </nav>
+
+
+
+    
+    <header>
+      <div style="margin-left: 45%;color: red;"><h5>{{err}}</h5></div>
+    <img src="{% static '/img/img.png'%}" class="img-fluid" alt="" style="height: 200px; width: 200px;margin-left: 45%;margin-top: 2%;">
+
+<div class="mytable" style="margin-left:19%;">
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+              <td colspan="2" style="text-align: center;">INFO PERSONNE</td>
+              
+              
+            </tr>
+          </thead>
+        
+          <tbody >
+            <tr>
+                <th scope="col" style="width: 500px;">Nom</th>
+                <th scope="col" style="width: 500px;">{{nom}}</th>
+                
+              </tr>
+            
+            <tr>
+              <th scope="row">Prenom</th>
+              <td colspan="2">{{prenom}}</td>  
+            </tr>
+            <tr>
+              <th scope="row">CIN</th>
+              <td colspan="2">{{cin}}</td>
+            </tr>
+            <tr>
+                <th scope="col" style="width: 500px;">DATE-CONSULTATION</th>
+                <th scope="col" style="width: 500px;">{{consultation}}</th>
+              </tr>
+              <tr>
+                <th scope="col">Maladi</th>
+                <th scope="col" >{{maladie}}</th>
+              </tr>
+            <tr>
+              <th scope="row">Traitement</th>
+              <td colspan="2">{{taritement}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Description</th>
+              <td colspan="2"><p>{{description}}</p></td>
+            </tr>
+            
+      </table>
+    </div>
+   
+<section>
+   
+
+    
+        
+  <footer><a href="/ajouter" class="btn  " id="creat" style="background-color: rgba(130, 238, 202, 0.5); width: 100%; height: 80px;padding-top: 15px;font-size: 30px;">Ajouter Consulatation</a></footer>
+
+    
+</body>
+</html>

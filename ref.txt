@@ -1,0 +1,4 @@
+[25] alalek, Haar cascade classifiers, Github (2013)
+https://www.quora.com/Which-is-the-best-face-recognition-algorithm-in-OpenCV-Python
+https://docs.opencv.org/3.4/df/d25/classcv_1_1face_1_1LBPHFaceRecognizer.html#ac33ba992b16f29f2824761cea5cd5fc5
+https://www.researchgate.net/figure/Exemple-dun-visage-dune-meme-personne-subissant-des-variations-de-pose-hors-plan_fig3_291345615

@@ -1,0 +1,52 @@
+html,body{
+    background-image: url('../img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+.mytable{
+    margin-top: 2%;
+    width:1000px;
+    margin-left: 25%;
+    
+}
+#a{  
+    
+    padding-top: 25px;
+    text-align: center;
+    color: whitesmoke;
+    margin-left: 4%;
+    width:  200px;
+    background-color: rgba(130, 238, 202, 0.5);
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    
+}
+#a:hover{
+    color: aliceblue;
+}
+.navbar {
+    
+    padding-top: 10%;
+    
+    color: whitesmoke;
+    
+}
+#navcont{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    width: 100%;
+}
+
+.h{
+    color: whitesmoke;
+    margin-left: 60%;
+    
+}
+.l{
+    color: whitesmoke;
+    margin-left: 4%;
+    
+}

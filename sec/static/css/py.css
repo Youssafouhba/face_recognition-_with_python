@@ -1,0 +1,144 @@
+body{
+    background-image: url(back2.jpg);
+   
+    background-repeat: no-repeat;
+    
+
+     background-size: cover;
+  background-position: center;
+}
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 800px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #4682B4;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #4682B4;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #4682B4;
+}
+.maintable{
+    margin-left: 350px;
+    width: 800px;
+    height: 488px;
+    margin-top: 10%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.box{
+  max-width: 400px;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 70%;
+ 
+}
+.box .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 50px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  /* margin-left: 400px;  */
+}
+#check:checked ~ .search-box{
+  max-width: 380px;
+}
+.search-box input{
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ border-radius: 25px;
+ background: #fff;
+ outline: none;
+ border: none;
+ padding-left: 20px;
+ font-size: 18px;
+}
+.btn-img{
+  background-color: transparent;
+  border: none;
+}
+.search-box .icon{
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 50px;
+  background: #FFF;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #4682B4;
+  font-size: 20px;
+  border-radius: 25px;
+  margin-left: 700px;
+}
+#check:checked ~ .search-box .icon{
+  background: #4682B4;
+  color: #FFF;
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+}
+#check{
+  display: none;
+}
+.forme{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  opacity: 0.1;
+}
+#re{
+  height: 50px;
+  width: 50px;
+}
+.butt{
+  display: flex;
+  margin-top: 2%;
+  margin-left: 9%;
+  width: 10px;
+  padding-left: 7px;
+  height: 100%;
+  
+}
+.btn-img{
+  margin-right: 50px;
+}

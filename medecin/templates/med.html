@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>{% load static %}
+        <title>page assistante</title>
+        <link rel="stylesheet" href="{% static '/css/py.css'%}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <div>
+        <div style="display: flex; height: 100px;">
+      <div class="butt">
+        <a href="./deconnect" >
+        <button class="btn-img" type="submit"> <img src="{% static '/css/logout.png' %}"  height="50px" alt=""></button>
+      </a>
+
+        <a href="/ajouter/">{% csrf_token %}
+        <button type="submit" class="btn-img" ><img src="{% static '/css/ajouter.png' %}"  height="50px" alt=""></button>
+      </a>
+      </div><!--
+      <div class="box">
+        <input type="checkbox" id="check">
+        <div class="search-box">
+          <input oninput="Search()" id="textbox" type="text" placeholder="Type here...">
+          <label for="check" class="icon">
+            <i class="fas fa-search"></i>
+          </label>
+        </div>
+      </div>-->
+      </div>
+      <span style="margin-left: 45%;color: blue;">{{a}}</span>
+      <div style="margin-left: 45%;color: red;"><h5>{{err}}</h5></div>
+      <div style="display: flex; width: 100%;">
+        
+   
+        <img class="forme" style="margin-top:20%; margin-left: 10%;" src="{% static '/css/image/h.png' %}" alt="">
+        <img class="forme" style="margin-top:30%; margin-left: 60%;" src="{% static '/css/image/i.png' %}" alt="">
+        <img class="forme" style="margin-top:10%; margin-left: 25%;" src="{% static '/css/image/l.png' %}" alt="">
+        <img class="forme" style="margin-top:20%; margin-left: 90%;" src="{% static '/css/image/h.png' %}" alt="">
+        <img class="forme" style="margin-top:30%; margin-left: 80%;" src="{% static '/css/image/i.png' %}" alt="">
+        <img class="forme" style="margin-top:10%; margin-left: 66%;" src="{% static '/css/image/l.png' %}" alt="">
+        <img class="forme" style="margin-top:1%; margin-left: 1%;" src="{% static '/css/image/i.png' %}" alt="">
+        <img class="forme" style="margin-top:10%; margin-left: 13%;" src="{% static '/css/image/i.png' %}" alt="">
+        <img class="forme" style="margin-top:5%; margin-left: 90%;" src="{% static '/css/image/h.png' %}" alt="">
+        <img class="forme" style="margin-top:15%; margin-left: 85%;" src="{% static '/css/image/i.png' %}" alt="">
+        <img class="forme" style="margin-top:35%; margin-left: 85%;" src="{% static '/css/image/l.png' %}" alt="">
+        <img class="forme" style="margin-top:36%; margin-left: 70%;" src="{% static '/css/image/l.png' %}" alt="">
+      </div>
+        <form style="position:absolute;margin-top: 10%; margin-left:85%" action="/medecin/suivant">{% csrf_token %}
+        <button type="submit" class="btn-img" ><img src="{% static '/css/suiv.png' %}"  height="50px" width="80px" alt=""></button>
+        </form>
+        
+        <div class="maintable">
+        <table id="tb" class="content-table">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Cin</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+
+                <td id="nom">
+                    {{nom}}
+                </td>
+
+                <td id="prenom">
+                    {{prenom}}
+                </td>
+                <td id="cin">
+                    {{cin}}
+                </td>
+
+            
+                </td>
+             
+           
+            </tbody>
+          </table>
+          </div>
+          
+        </div>  
+    </body>
+    </html>
